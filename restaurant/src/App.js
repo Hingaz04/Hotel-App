@@ -17,7 +17,8 @@ import "./App.css";
 const App = () => (
   <div>
     <Navbar />
-    {/* <Header />
+    <Header />
+    {/* 
     <AboutUs />
     <SpecialMenu />
     <Chef />
