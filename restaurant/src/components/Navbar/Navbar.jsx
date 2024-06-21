@@ -10,11 +10,11 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="app_navbar">
-      <div className="app_navbar-logo">
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
         <img src={images.gericht} alt="app.logo" />
       </div>
-      <ul className="app_navbar-links">
+      <ul className="app__navbar-links">
         <li className="p__opensans">
           <a href="#home">Home</a>
         </li>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <a href="#contacts">Contacts</a>
         </li>
       </ul>
-      <div className="app_navbar-login">
+      <div className="app__navbar-login">
         <a href="login" className="p__opensans">
           Log In / Register
         </a>
@@ -40,20 +40,20 @@ const Navbar = () => {
           Book Table
         </a>
       </div>
-      <div className="app_navbar-smallscreen">
+      <div className="app__navbar-smallscreen">
         <GiHamburgerMenu
           color="#fff"
           fontSize={27}
           onClick={() => setToggleMenu(true)}
         />
         {toggleMenu && (
-          <div className="app_navbar-smallscreen_overlay flex__center slide-bottom">
+          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
 
-            <ul className="app_navbar-smallscreen-links">
+            <ul className="app__navbar-smallscreen-links">
               <li className="p__opensans">
                 <a href="#home">Home</a>
               </li>
